@@ -11,7 +11,7 @@ export function Sidebar() {
                     <li>
                         <Link href="#">
                             <a>
-                                <Image src="/icons/moveit.svg"
+                                <Image src="/icons/navbar/moveit.svg"
                                     width={50}
                                     height={50}
                                     alt="moveit icon" />
@@ -21,7 +21,7 @@ export function Sidebar() {
                     <li>
                         <Link href="#">
                             <a>
-                                <Image src="/icons/medal.svg"
+                                <Image src="/icons/navbar/medal.svg"
                                     width={50}
                                     height={50}
                                     alt="medal icon" />
@@ -31,7 +31,7 @@ export function Sidebar() {
                     <li>
                        <Link href="#">
                            <a>
-                               <Image src="/icons/github.svg"
+                               <Image src="/icons/navbar/github.svg"
                                     width={50}
                                     height={50}
                                     alt="github icon" />

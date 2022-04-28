@@ -1,40 +1,22 @@
-import { createContext, ReactNode, useEffect, useState } from 'react';
+import { 
+    createContext, 
+    useEffect, 
+    useState 
+} from 'react';
+
 import Cookies from 'js-cookie';
 
-import challenges from '../../challenges.json';
+import type { 
+    ChallengesContextData, 
+    ChallengesProviderProps 
+} from '../types/ChallengesTypes';
+
 import { LevelUpModal } from '../components/LevelUpModal';
 
-interface Challenge {
-    type: "body" | "eye",
-    description: string,
-    amount: number
-}
-
-interface ChallengesProviderProps {
-    children: ReactNode,
-    level: number,
-    currentExperience: number,
-    challengesCompleted: number
-}
-
-interface ChallengesContextData {
-    level: number,
-    currentExperience: number,
-    challengesCompleted: number,
-    acitveChallenge: Challenge,
-    experienceToNextLevel: number,
-    levelUp: () => void,
-    startNewChallenge: () => void,
-    completeChalleneg: () => void,
-    resetChallenge: () => void,
-    closeLevelUpModal: () => void
-}
+import challenges from '../../challenges.json';
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
-
-export function ChallengesProvider({ 
-    children, 
-    ...rest}: ChallengesProviderProps) {
+export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProps) {
     const [level, setLevel] = useState(rest.level ?? 1);
     const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
     const [challengesCompleted, setChalllengesCompleted] = useState(rest.challengesCompleted ?? 0);
@@ -72,11 +54,17 @@ export function ChallengesProvider({
 
         new Audio("/notification.mp3").play();
 
-        if (Notification.permission === "granted") {
-            new Notification('Novo Desafio', {
-                body: "Valendo X de experience"
-            })
+        let emoji;
+
+        if (challenge.type === "body") {
+            emoji = "💪"
+        } else if (challenge.type === "eye") {
+            emoji = "👁️"
         }
+
+        new Notification(`Novo Desafio ${emoji}`, {
+            body: `${challenge.description}\n(${challenge.amount}xp)`
+        })
     }
     
     function completeChalleneg() {
