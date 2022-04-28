@@ -1,7 +1,4 @@
 import { useContext } from 'react';
-
-import Image from 'next/image'
-
 import { ChallengesContext } from '../contexts/ChallengesContext';
 import Styles from '../styles/components/Profile.module.css';
 export function Profile() {
@@ -10,19 +7,11 @@ export function Profile() {
 
     return (
         <div className={Styles.profileContainer}>
-            <div>
-            <Image src="/vercel.png"
-                width={80}
-                height={80}
-                alt="level" />
-            </div>
+            <img src="/vercel.png" alt="user iamge" />
             <div>
                 <strong>Annonymous</strong>
                 <p>
-                    <Image src="/icons/level.svg"
-                        width={14}
-                        height={16}
-                        alt="level" />
+                    <img src="/icons/level.svg" alt="level" />
                     Level {level}
                 </p>
             </div>

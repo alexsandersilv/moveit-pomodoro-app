@@ -23,9 +23,8 @@
     }
 }
 
-@media (max-width: 768px) { /* iPad Mini */
+@media (max-width: 768px) {
     .container section {
-        margin-top: 3rem;
         grid-template-columns: 1fr;
     }
 }

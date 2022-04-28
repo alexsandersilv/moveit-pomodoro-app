@@ -3,7 +3,9 @@
     align-items: center;
 }
 
-.profileContainer > div:first-child img {
+.profileContainer > img {
+    width: 5.5rem;
+    height: 5.5rem;
     border-radius: 50%;
 }
 
