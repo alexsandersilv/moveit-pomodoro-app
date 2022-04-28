@@ -11,6 +11,7 @@ import { ChallengeBox } from '../components/ChallengeBox';
 
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import { Sidebar } from '../components/Sidebar';
 
 import Styles from '../styles/pages/Home.module.css';
 
@@ -34,6 +35,7 @@ const Home: NextPage<HomeProps> = (props) => {
                     <title>Move.It Pomodoro</title>
                 </Head>
 
+                <Sidebar />
                 <ExperienceBar />
 
                 <CountdownProvider>

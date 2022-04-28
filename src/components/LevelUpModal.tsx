@@ -1,6 +1,10 @@
 
 import { useContext } from 'react';
+
+import Image from 'next/image';
+
 import { ChallengesContext } from '../contexts/ChallengesContext';
+
 import Styles from '../styles/components/LevelUpModal.module.css';
 
 export function LevelUpModal() {
@@ -16,7 +20,10 @@ export function LevelUpModal() {
                 <p> Você alcançou um novo level.</p>
 
                 <button type="button" onClick={closeLevelUpModal}> 
-                    <img src="/icons/close.svg" alt="close modal" />
+                    <Image src="/icons/close.svg"
+                        width={40}
+                        height={40}
+                        alt="close modal" />
                 </button>
             </div>
         </div>

@@ -42,7 +42,7 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
             setHasFinished(true);
             startNewChallenge();
         }
-    },[isActive, time, startNewChallenge])
+    },[isActive, time])
     return (
         <CountdownContext.Provider value={{
             minutes,
