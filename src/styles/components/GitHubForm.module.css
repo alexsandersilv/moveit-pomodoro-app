@@ -15,7 +15,7 @@
     padding: 2.5rem;
     
     border-radius: 5px;
-    background: var(--white);
+    background: var(--navbar);
 }
 
 .gitHubFormContainer form strong {
@@ -25,7 +25,6 @@
     flex-direction: column;
 
     font-size: 2rem;
-
 }
 
 .gitHubFormContainer form strong img {

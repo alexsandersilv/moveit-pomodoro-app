@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 import Styles from '../styles/components/GitHubForm.module.css';
 export function GitHubForm() {
@@ -6,7 +7,10 @@ export function GitHubForm() {
             <form>
 
                 <strong>
-                    <img src="/icons/navbar/github.svg" alt="github icon" />
+                    <Image src="/icons/navbar/github.svg"
+                        width={250}
+                        height={250}
+                        alt="github icon" />
                     
                     Faça o login para salvar o seu progresso.
                 </strong>
