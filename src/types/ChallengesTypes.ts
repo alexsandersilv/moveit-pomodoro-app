@@ -8,12 +8,16 @@ interface Challenge {
 
 export interface ChallengesProviderProps {
     children: ReactNode,
+    userName: string,
+    userImage: string,
     level: number,
     currentExperience: number,
     challengesCompleted: number
 }
 
 export interface ChallengesContextData {
+    userName: string,
+    userImage: string,
     level: number,
     currentExperience: number,
     challengesCompleted: number,

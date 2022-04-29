@@ -1,5 +1,7 @@
-import type { NextPage } from 'next';
+import type { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 import Head from 'next/head';
+
+import { useSession } from 'next-auth/react';
 
 import type { HomeProps } from '../types/HomeTypes';
 
@@ -14,10 +16,25 @@ import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { Sidebar } from '../components/Sidebar';
 
 import Styles from '../styles/pages/Home.module.css';
+/*
+export const getServerSideProps: GetServerSideProps = async(ctx: GetServerSidePropsContext) => {
+    
+    const { level, currentExperience, challengesCompleted } = ctx.req.cookies
 
-const Home: NextPage<HomeProps> = ({ level, currentExperience,challengesCompleted }) => {
+    return {
+        props: {
+            level: Number(level),
+            currentExperience: Number(currentExperience),
+            challengesCompleted: Number(challengesCompleted)
+        }
+    }
+}
+*/
+
+const Home: NextPage<HomeProps> = ({ username, userimage, level, currentExperience,challengesCompleted }) => {
+
     return (
-        <ChallengesProvider level={level} currentExperience={currentExperience} challengesCompleted={challengesCompleted} >
+        <ChallengesProvider userName={username} level={level} currentExperience={currentExperience} challengesCompleted={challengesCompleted} userImage={userimage} >
             <div className={Styles.container}>
                 <Head>
                     <title>Move.It Pomodoro</title>

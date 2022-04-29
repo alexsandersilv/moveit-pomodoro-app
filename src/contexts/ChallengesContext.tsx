@@ -17,6 +17,8 @@ import challenges from '../../challenges.json';
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
 export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProps) {
+    const [userName] = useState(rest.userName ?? "Annonymous");
+    const [userImage] = useState(rest.userImage ?? "/icons/profile/vercel.png")
     const [level, setLevel] = useState(rest.level ?? 1);
     const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
     const [challengesCompleted, setChalllengesCompleted] = useState(rest.challengesCompleted ?? 0);
@@ -93,6 +95,8 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
 
     return (
         <ChallengesContext.Provider value={{
+            userName,
+            userImage,
             level,
             currentExperience,
             challengesCompleted,

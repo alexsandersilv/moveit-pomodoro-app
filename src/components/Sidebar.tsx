@@ -1,9 +1,14 @@
+import { useSession, signIn, signOut } from "next-auth/react"
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 import Styles from '../styles/components/Sidebar.module.css';
 
 export function Sidebar() {
+
+    const { data: session } = useSession()
+
     return (
         <div className={Styles.sidebarContainer}>
             <nav>
@@ -29,14 +34,21 @@ export function Sidebar() {
                         </Link>
                     </li>
                     <li>
-                       <Link href="/github">
-                           <a>
-                               <Image src="/icons/navbar/github.svg"
-                                    width={50}
-                                    height={50}
-                                    alt="github icon" />
-                           </a>
-                       </Link>
+                        { session ? (
+                       <a onClick={() => signOut()}>
+                            <Image src="/icons/navbar/github.svg"
+                                width={50}
+                                height={50}
+                                alt="github icon" />
+                        </a>
+                        ) : (
+                       <a onClick={() => signIn("github")}>
+                            <Image src="/icons/navbar/github.svg"
+                                width={50}
+                                height={50}
+                                alt="github icon" />
+                        </a>
+                        )}
                     </li>
                 </ul>
             </nav>

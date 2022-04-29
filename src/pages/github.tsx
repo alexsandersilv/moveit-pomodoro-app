@@ -11,7 +11,7 @@ const GitHub: NextPage = () => {
     return (
         <div className={Styles.container}>
             <Head>
-                <title>Move.It GitHub Login</title>
+                <title>Move.It GitHub</title>
             </Head>
 
             <Sidebar />
