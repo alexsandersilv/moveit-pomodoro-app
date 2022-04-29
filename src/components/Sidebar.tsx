@@ -9,7 +9,7 @@ export function Sidebar() {
             <nav>
                 <ul>
                     <li>
-                        <Link href="#">
+                        <Link href="/">
                             <a>
                                 <Image src="/icons/navbar/moveit.svg"
                                     width={50}
@@ -29,7 +29,7 @@ export function Sidebar() {
                         </Link>
                     </li>
                     <li>
-                       <Link href="#">
+                       <Link href="/github">
                            <a>
                                <Image src="/icons/navbar/github.svg"
                                     width={50}

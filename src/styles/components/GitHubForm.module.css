@@ -1,0 +1,46 @@
+.gitHubFormContainer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.gitHubFormContainer form {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    gap: 2.5rem;
+    
+    padding: 2.5rem;
+    
+    border-radius: 5px;
+    background: var(--white);
+}
+
+.gitHubFormContainer form strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 2rem;
+
+}
+
+.gitHubFormContainer form strong img {
+    width: 15rem;
+    height: 15rem;
+
+    margin-bottom: 1.25rem;
+}
+
+.gitHubFormContainer form button {
+    height: 3rem;
+
+    border: 1px solid var(--text);
+    border-radius: 5px;
+
+    background: transparent;
+    color: var(--text);
+}
