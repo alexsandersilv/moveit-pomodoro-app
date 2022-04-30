@@ -1,7 +1,7 @@
 # moveit-pomodoro-app
 
 ## Getting Started
-Faça o download projeto clicando aqui ou por linha de comando.
+Faça o download projeto [clicando aqui](https://github.com/alexsandersilv/moveit-pomodoro-app/archive/refs/heads/main.zip) ou por linha de comando.
 ```sh
 # git
 git clone https://github.com/alexsandersilv/moveit-pomodoro-app
@@ -10,7 +10,7 @@ git clone https://github.com/alexsandersilv/moveit-pomodoro-app
 gh repo clone alexsandersilv/moveit-pomodoro-app
 ```
 
-Depois de terminar o Download do pomodoro entre no diretorio do projeto (``cd moveit-pomodoro-app`` ou ``cd moveit-pomodoro-app-main``), agora podemos instalar as dependências e ligar o servidor.
+Depois de terminar o Download do pomodoro entre no diretorio do projeto (``cd moveit-pomodoro-app`` ou ``cd moveit-pomodoro-app-main``), agora podemos instalar as dependências e iniciar o servidor.
 
 ```sh
 # yarn
@@ -20,7 +20,9 @@ yarn
 npm install
 ```
 
-Depois de instalar as dependências, o servidor está pronto para ser ativado.
+Depois de instalar as dependências, o servidor pode ser iniciado. 
+
+**DEV**
 
 ```sh
 # yarn
@@ -29,6 +31,27 @@ yarn run dev
 # npm
 npm run dev
 ```
+
+**Build**
+
+```sh
+# yarn
+yarn run build
+
+# npm 
+npm run dev
+```
+
+**Start**
+
+```sh
+# yarn
+yarn run start
+
+# npm 
+npm run start
+```
+
 ## Imagens
 
 ### Normal 
@@ -38,20 +61,58 @@ npm run dev
 
 
 ### iPad Air
+<div style="display:flex" >
+
+<img src="./.github/images/home_iPadAir.png" width="500" alt="homeMini" />
+<img src="./.github/images/activeChallenge_iPadAir.png" width="500" alt="activeChallengeAir" />
+  
+  <!--
 ![homeAir](./.github/images/home_iPadAir.png)
 
 ![activeChallengeAir](./.github/images/activeChallenge_iPadAir.png)
+  -->
+</div>
 
 ### IPad Mini
+<div style="display:flex" >
+ 
+<img src="./.github/images/home_iPadMini.png" width="500" alt="homeMini" />
+<img src="./.github/images/activeChallenge_iPadMini.png" width="500" alt="activeChallengeMini" />
+
+  <!--
 ![homeMini](./.github/images/home_iPadMini.png)
 
 ![activeChallengeAir](./.github/images/activeChallenge_iPadMini.png)
+-->  
 
+</div>
 
 
 ### Level Up ( Modal )
 
 ![levlUp](./.github/images/levelUp.png)
+
+### CSS
+
+A maioria das cores usadas são da plataforma da [@Rocketseat](https://github.com/Rocketseat).
+
+**Variáveis**
+
+```css
+:root {
+  --white: #fff;
+  --background: #121214;
+  --navbar: #202024;
+  --text: #e6e6e6;
+  --countdown: #52525c;
+  --text-highlight: #b3b9ff;
+  --title: #fff;
+  --red: #e83f5b;
+  --green: #4cd62b;
+  --blue: #225aa3;
+  --blue-dark: #1b4172;
+}
+```
 
 ## LICENSE
 ```
