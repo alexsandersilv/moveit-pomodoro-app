@@ -63,8 +63,8 @@ npm run start
 ### iPad Air
 <div style="display:flex" >
 
-<img src="./.github/images/home_iPadAir.png" width="350" alt="homeMini" />
-<img src="./.github/images/activeChallenge_iPadAir.png" width="350" alt="activeChallengeAir" />
+<img src="./.github/images/home_iPadAir.png" width="400" alt="homeMini" />
+<img src="./.github/images/activeChallenge_iPadAir.png" width="400" alt="activeChallengeAir" />
   
   <!--
 ![homeAir](./.github/images/home_iPadAir.png)
@@ -76,8 +76,8 @@ npm run start
 ### IPad Mini
 <div style="display:flex" >
  
-<img src="./.github/images/home_iPadMini.png" width="350" alt="homeMini" />
-<img src="./.github/images/activeChallenge_iPadMini.png" width="350" alt="activeChallengeMini" />
+<img src="./.github/images/home_iPadMini.png" width="400" alt="homeMini" />
+<img src="./.github/images/activeChallenge_iPadMini.png" width="400" alt="activeChallengeMini" />
 
   <!--
 ![homeMini](./.github/images/home_iPadMini.png)
