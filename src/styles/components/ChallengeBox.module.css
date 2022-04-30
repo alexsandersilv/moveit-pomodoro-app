@@ -51,7 +51,7 @@
     font-weight: 600;
     font-family: 1.25rem;
     padding: 0 2rem 1.5rem;
-    border-bottom: 1px solid var(--navbar);
+    border-bottom: 1px solid var(--blue);
 }
 .challengesActive main {
     flex: 1;

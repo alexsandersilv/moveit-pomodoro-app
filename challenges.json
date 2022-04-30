@@ -40,6 +40,51 @@
     "amount": 80
   },
   {
+    "type": "body",
+    "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
+    "amount": 90
+  },
+  {
+    "type": "body",
+    "description": "Beba um pouco de água.",
+    "amount": 60
+  },
+  {
+    "type": "body",
+    "description": "Alongue o pescoço para frente, para trás e para os lados. Gire depois o pescoço sobre os ombros de forma lenta e o mais acentuado possível, invertendo os sentidos.",
+    "amount": 80
+  },
+  {
+    "type": "body",
+    "description": "Eleve os braços na lateral da cabeça e segure-o na região do cotovelo. Repita o exercício do outro lado. Cruze a frente do tórax com um dos braços e pressione o cotovelo junto ao peito. Repita do outro lado. Faça uma rotação simultânea nos dois ombros nos dois sentidos.",
+    "amount": 70
+  },
+  {
+    "type": "body",
+    "description": "Entrelace os dedos atrás das costas, com as palmas das mãos voltadas para dentro. Lentamente eleve-as de modo que sinta os ombros alongados.",
+    "amount": 70
+  },
+  {
+    "type": "body",
+    "description": "Entrelace os dedos atrás das costas, com as palmas das mãos voltadas para dentro. Lentamente eleve-as de modo que sinta os ombros alongados.",
+    "amount": 70
+  },
+  {
+    "type": "body",
+    "description": "Em pé, flexione o joelho direito para trás e segure-o com a mão direita, até que ele chegue ao bumbum. Mantenha a posição por 20 segundos e repita-o três vezes com cada perna.",
+    "amount": 120
+  },
+  {
+    "type": "eye",
+    "description": "Relaxando os músculos faciais, abra e feche as pálpebras cerca de 20 vezes. Faça isso devagar, suavemente e sem esforço. Esse exercício estimula a circulação de sangue e ajuda a lubrificar os olhos, prevenindo a síndrome do olho seco.",
+    "amount": 80
+  },
+  {
+    "type": "eye",
+    "description": "Estique os braços para frente com os polegares para cima, mais ou menos a 40 cm de distância do rosto. Mantendo o olhar nos polegares, e sem mover o braço, balance a cabeça de um lado para o outro. Esse movimento exercita o foco e o movimento lateral dos olhos. Repita por 30 segundos.",
+    "amount": 80
+  },
+  {
     "type": "eye",
     "description": "Sentado, feche os olhos e cubra-os com as palmas da mão durante 2 minutos, depois abra normalmente.",
     "amount": 90
@@ -53,10 +98,5 @@
     "type": "eye",
     "description": "Usando os polegares, massage a área abaixo das sobrancelhas em movimentos circulares por 15 segundos.",
     "amount": 70
-  },
-  {
-    "type": "body",
-    "description": "Em pé, gire a cintura o máximo que puder para a esquerda, segure por cinco segundos. Repita para a direita.",
-    "amount": 90
   }
 ]

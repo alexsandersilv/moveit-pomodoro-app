@@ -65,7 +65,8 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
         }
 
         new Notification(`Novo Desafio ${emoji}`, {
-            body: `${challenge.description}\n(${challenge.amount}xp)`
+            body: `${challenge.description}\n(${challenge.amount}xp)`,
+            icon: "/favicon.ico"
         })
     }
     
