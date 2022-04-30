@@ -114,6 +114,9 @@ A maioria das cores usadas são da plataforma da [@Rocketseat](https://github.co
 }
 ```
 
+## VERSÃO DE TESTE
+https://moveit-pomodoro-app-alexsandersilv.vercel.app/
+
 ## LICENSE
 ```
 MIT License
