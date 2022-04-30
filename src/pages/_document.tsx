@@ -6,8 +6,8 @@ export default class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta charSet="UTF-8" />
-                    <meta name="description" content="Use um pomodoro para almentar sua produtividade e quando o tempo acabar faça desafios para subir de nivel" />
-                    <meta name="keywords" content="Pomodoro, Move.It, Rocketseat, NLW, NLW-4, NextLevelWeek" />
+                    <meta name="description" content="Use um pomodoro para aumentar sua produtividade e foco, e quando o timer acabar faça os desafios para ganhar xp e subir de level." />
+                    <meta name="keywords" content="pomodoro, moveit, move.it, vercel, rocketseat, rocketseat-nlw, rocketseat-nlw4 nlw, nlw4, nextlevelweek, nsl" />
                     <meta name="author" content="Alexsander" />
                     
                     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
