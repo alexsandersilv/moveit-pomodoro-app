@@ -1,5 +1,27 @@
 # moveit-pomodoro-app
 
+## Tecnologias
+<div style="display: flex">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="120" alt="react" />
+  
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" width="137" alt="nextjs" />
+
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" width="175" alt="ts" />
+  
+</div>
+
+<!--
+![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![ts](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![nextjs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+-->
+
+## Cloud
+
+<a href="https://vercel.com/dashboard" target="_blank">
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" width="120" alt="vecel" />
+</a>
+
 ## Getting Started
 Faça o download projeto [clicando aqui](https://github.com/alexsandersilv/moveit-pomodoro-app/archive/refs/heads/main.zip) ou por linha de comando.
 ```sh
@@ -113,8 +135,6 @@ A maioria das cores usadas são da plataforma da [@Rocketseat](https://github.co
   --blue-dark: #1b4172;
 }
 ```
-
-**[VERSÃO DE TESTE](https://moveit-pomodoro-app-alexsandersilv.vercel.app/)**
 
 ## LICENSE
 ```
