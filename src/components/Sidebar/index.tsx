@@ -3,7 +3,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Styles from '../styles/components/Sidebar.module.css';
+import Styles from '../../styles/components/Sidebar.module.css';
 
 export function Sidebar() {
 

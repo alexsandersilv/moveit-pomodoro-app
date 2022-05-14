@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 import { useContext } from 'react';
 
-import { ChallengesContext } from '../contexts/ChallengesContext';
+import { ChallengesContext } from '../../contexts/ChallengesContext';
 
-import Styles from '../styles/components/Profile.module.css';
+import Styles from '../../styles/components/Profile.module.css';
 
 export function Profile() {
     const { data: session } = useSession()

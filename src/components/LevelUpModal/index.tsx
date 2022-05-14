@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 import { useContext } from 'react';
 
-import { ChallengesContext } from '../contexts/ChallengesContext';
+import { ChallengesContext } from '../../contexts/ChallengesContext';
 
-import Styles from '../styles/components/LevelUpModal.module.css';
+import Styles from '../../styles/components/LevelUpModal.module.css';
 
 export function LevelUpModal() {
 
