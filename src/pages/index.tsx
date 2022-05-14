@@ -18,49 +18,54 @@ import { Sidebar } from '../components/Sidebar';
 import Styles from '../styles/pages/Home.module.css';
 /*
 export const getServerSideProps: GetServerSideProps = async(ctx: GetServerSidePropsContext) => {
-    
-    const { level, currentExperience, challengesCompleted } = ctx.req.cookies
+  
+  const { level, currentExperience, challengesCompleted } = ctx.req.cookies
 
-    return {
-        props: {
-            level: Number(level),
-            currentExperience: Number(currentExperience),
-            challengesCompleted: Number(challengesCompleted)
-        }
-    }
+  return {
+      props: {
+          level: Number(level),
+          currentExperience: Number(currentExperience),
+          challengesCompleted: Number(challengesCompleted)
+      }
+  }
 }
 */
 
-const Home: NextPage<HomeProps> = ({ username, userimage, level, currentExperience,challengesCompleted }) => {
+const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperience,challengesCompleted }) => {
 
-    return (
-        <ChallengesProvider userName={username} level={level} currentExperience={currentExperience} challengesCompleted={challengesCompleted} userImage={userimage} >
-            <div className={Styles.container}>
-                <Head>
-                    <title>Move.It Pomodoro</title>
-                </Head>
+  return (
+    <ChallengesProvider 
+      userName={username} 
+      level={level} 
+      currentExperience={currentExperience} 
+      challengesCompleted={challengesCompleted} 
+      userImage={userImage} 
+    >
+      <div 
+        className={Styles.container}
+      >
+        <Head>
+            <title>Move.It Pomodoro</title>
+        </Head>
 
-                <Sidebar />
-                <ExperienceBar />
+        <Sidebar />
+        <ExperienceBar />
 
-                <CountdownProvider>
-
-                    <section>
-                        <div>
-                            <Profile />
-                            <CompletedChallenges />
-                            <Countdown />
-                        </div>
-                        <div>
-                            <ChallengeBox />
-                        </div>
-                    </section>
-
-                </CountdownProvider>
-            </div>
-        </ChallengesProvider>
-    );
+        <CountdownProvider>
+          <section>
+              <div>
+                  <Profile />
+                  <CompletedChallenges />
+                  <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+          </section>
+        </CountdownProvider>
+      </div>
+    </ChallengesProvider>
+  );
 }
-
 
 export default Home

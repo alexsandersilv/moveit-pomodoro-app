@@ -6,10 +6,13 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <SessionProvider session={pageProps.session} refetchInterval={0}>
-        <Component { ...pageProps} />
-      </SessionProvider>
-    );
+    <SessionProvider 
+      session={pageProps.session} 
+      refetchInterval={0}
+    >
+      <Component { ...pageProps} />
+    </SessionProvider>
+  );
 }
 
 export default MyApp
