@@ -31,10 +31,10 @@ export const getServerSideProps: GetServerSideProps = async(ctx: GetServerSidePr
 }
 */
 
-const Home: NextPage<HomeProps> = ({ username, userimage, level, currentExperience,challengesCompleted }) => {
+const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperience,challengesCompleted }) => {
 
     return (
-        <ChallengesProvider userName={username} level={level} currentExperience={currentExperience} challengesCompleted={challengesCompleted} userImage={userimage} >
+        <ChallengesProvider userName={username} level={level} currentExperience={currentExperience} challengesCompleted={challengesCompleted} userImage={userImage} >
             <div className={Styles.container}>
                 <Head>
                     <title>Move.It Pomodoro</title>

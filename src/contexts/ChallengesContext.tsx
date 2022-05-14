@@ -17,13 +17,13 @@ import challenges from '../../challenges.json';
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
 export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProps) {
-    const [userName] = useState(rest.userName ?? "Annonymous");
+    const [userName] = useState(rest.userName ?? "Anonymous");
     const [userImage] = useState(rest.userImage ?? "/icons/profile/vercel.png")
     const [level, setLevel] = useState(rest.level ?? 1);
     const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
-    const [challengesCompleted, setChalllengesCompleted] = useState(rest.challengesCompleted ?? 0);
+    const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
 
-    const [acitveChallenge, setActiveChallenge] = useState(null);
+    const [activeChallenge, setActiveChallenge] = useState(null);
     const [ isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
     const experienceToNextLevel = Math.pow((level + 1) * 7, 2);
@@ -70,12 +70,12 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
         })
     }
     
-    function completeChalleneg() {
-        if (!acitveChallenge){
+    function completeChallenge() {
+        if (!activeChallenge){
             return;
         }
 
-        const { amount } = acitveChallenge;
+        const { amount } = activeChallenge;
 
         let finalExperience = currentExperience + amount;
 
@@ -86,7 +86,7 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
 
         setCurrentExperience(finalExperience);
         setActiveChallenge(null);
-        setChalllengesCompleted(challengesCompleted + 1);
+        setChallengesCompleted(challengesCompleted + 1);
 
     }
 
@@ -102,11 +102,11 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
             currentExperience,
             challengesCompleted,
             //@ts-ignore
-            acitveChallenge,
+            activeChallenge: activeChallenge,
             experienceToNextLevel,
             levelUp,
             startNewChallenge,
-            completeChalleneg,
+            completeChallenge,
             resetChallenge,
             closeLevelUpModal
         }}>

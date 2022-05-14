@@ -8,46 +8,46 @@ import { CountdownContext } from '../../contexts/CountdownContext';
 import Styles from '../../styles/components/ChallengeBox.module.css';
 
 export function ChallengeBox() {
-    const { acitveChallenge, completeChalleneg, resetChallenge } = useContext(ChallengesContext);
+    const { activeChallenge, completeChallenge, resetChallenge } = useContext(ChallengesContext);
     const { resetCountdown } = useContext(CountdownContext)
 
-    function handleChallengeSucceded() {
-        completeChalleneg();
+    function handleChallengeSucceeded() {
+        completeChallenge();
         resetCountdown();
     }
 
-    function hadleChallengeFailed() {
+    function handleChallengeFailed() {
         resetChallenge();
         resetCountdown();
     }
  
     return (
         <div className={Styles.challengeBoxContainer}>
-            { acitveChallenge ? (
+            { activeChallenge ? (
                 <div className={Styles.challengesActive}>
-                    <header>Ganhe {acitveChallenge.amount} xp</header>
+                    <header>Ganhe {activeChallenge.amount} xp</header>
 
                     <main>
-                        <Image src={`/icons/challenges/${acitveChallenge.type}.svg`}
+                        <Image src={`/icons/challenges/${activeChallenge.type}.svg`}
                             height={150}
                             width={125}
                             alt="challenge image" />
                         <strong>Novo Desafio.</strong>
-                        <p>{acitveChallenge.description}</p>
+                        <p>{activeChallenge.description}</p>
                     </main>
 
                     <footer>
                         <button 
                             type="button"
                             className={Styles.challengeSucceededButton}
-                            onClick={handleChallengeSucceded}
+                            onClick={handleChallengeSucceeded}
                         >
                             Completei
                         </button>
                         <button 
                             type="button"
                             className={Styles.challengeFailedButton}
-                            onClick={hadleChallengeFailed}
+                            onClick={handleChallengeFailed}
                         >
                             Falhei
                         </button>

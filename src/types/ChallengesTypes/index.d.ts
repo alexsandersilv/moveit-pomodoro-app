@@ -21,11 +21,11 @@ export interface ChallengesContextData {
     level: number,
     currentExperience: number,
     challengesCompleted: number,
-    acitveChallenge: Challenge,
+    activeChallenge: Challenge,
     experienceToNextLevel: number,
     levelUp: () => void,
     startNewChallenge: () => void,
-    completeChalleneg: () => void,
+    completeChallenge: () => void,
     resetChallenge: () => void,
     closeLevelUpModal: () => void
 }

@@ -1,6 +1,6 @@
 export interface HomeProps {
   username: string,
-  userimage: string,
+  userImage: string,
   level: number,
   currentExperience: number,
   challengesCompleted: number
