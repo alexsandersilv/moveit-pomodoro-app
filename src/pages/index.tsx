@@ -42,7 +42,9 @@ const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperien
       userImage={userImage} 
     >
       <div 
-        className={Styles.container}
+        className="
+          flex  flex-col h-[100vh] max-w-[992px] my-0 mx-auto py-9 px-10
+        "
       >
         <Head>
             <title>Move.It Pomodoro</title>
@@ -52,7 +54,14 @@ const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperien
         <ExperienceBar />
 
         <CountdownProvider>
-          <section>
+          <section
+            className="
+              flex-1 grid grid-cols-2 gap-24 content-center
+
+              lg:mt-12
+              md:gap-8 md:grid-cols-1
+            "
+          >
               <div>
                   <Profile />
                   <CompletedChallenges />
