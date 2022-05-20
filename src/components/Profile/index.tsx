@@ -12,15 +12,10 @@ export function Profile() {
 
   return (
     <div 
-      className="
-        flex items-center
-      "
+      className="flex items-center"
     >
     <div
-      className="
-        ml-6
-        rounded-[50%]
-      "
+      className="ml-6 rounded-[50%]"
     >
       <Image 
         src={ session ? `${session.user?.image}` : `${userImage}` }
@@ -30,22 +25,15 @@ export function Profile() {
       />
     </div>
       <div
-        className="
-          ml-6
-        "
+        className="ml-6"
       >
         <strong
-          className="
-            text-2xl font-semibold
-          "
+          className="text-2xl font-semibold "
         >
           { session ? session.user?.name : userName }
         </strong>
         <p
-          className="
-            text-base
-            mt-2
-          "
+          className="text-base mt-2"
         >
           <Image 
             src="/icons/profile/level.svg"

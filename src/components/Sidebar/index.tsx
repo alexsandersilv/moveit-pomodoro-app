@@ -9,27 +9,14 @@ export function Sidebar() {
 
   return (
     <div 
-      className="
-        lg:z-10
-      "
+      className="lg:z-10"
     >
       <nav>
         <ul 
-          className="
-            flex flex-col justify-center gap-6
-            w-16 top-0 left-0 bottom-0 fixed
-            bg-black-nav bg-opacity-100
-            list-none
-
-            lg:flex-row
-            lg:w-full lg:h-16 lg:top-0 lg:left-0
-          "
+          className="flex flex-col justify-center gap-6 w-16 top-0 left-0 bottom-0 fixed bg-black-nav bg-opacity-100 list-none lg:flex-row lg:w-full lg:h-16 lg:top-0 lg:left-0"
         >
           <li
-            className="
-              hover:border-r-2 hover:border-r-blue-normal
-              lg:hover:border-r-0 lg:hover:border-b-2 lg:hover:border-b-blue-normal
-            "
+            className="hover:border-r-2 hover:border-r-blue-normal lg:hover:border-r-0 lg:hover:border-b-2 lg:hover:border-b-blue-normal"
           >
             <Link 
               href="/"
@@ -45,10 +32,7 @@ export function Sidebar() {
             </Link>
           </li>
           <li
-            className="
-              hover:border-r-2 hover:border-r-blue-normal
-              lg:hover:border-r-0 lg:hover:border-b-2 lg:hover:border-b-blue-normal
-            "
+            className="hover:border-r-2 hover:border-r-blue-normal lg:hover:border-r-0 lg:hover:border-b-2 lg:hover:border-b-blue-normal"
           >
             <Link 
               href="#"
@@ -64,10 +48,7 @@ export function Sidebar() {
             </Link>
           </li>
           <li
-            className="
-              hover:border-r-2 hover:border-r-blue-normal
-              lg:hover:border-r-0 lg:hover:border-b-2 lg:hover:border-b-blue-normal
-            "
+            className="hover:border-r-2 hover:border-r-blue-normal lg:hover:border-r-0 lg:hover:border-b-2 lg:hover:border-b-blue-normal"
           >
             { session ? (
               <a 
