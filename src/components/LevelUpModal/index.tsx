@@ -12,17 +12,56 @@ export function LevelUpModal() {
 
   return (
     <div 
-      className={Styles.overlay}
+      className="
+        flex justify-center items-center
+        top-0 left-0 bottom-0 right-0 fixed
+        bg-[#050505cc]
+      "
     >
       <div
-        className={Styles.container}
+        className="
+          text-center
+          w-full max-w-[400px] p-12 relative
+          rounded shadow-sm
+          bg-black-nav
+        "
       >
-        <header>{level}</header>
+        <header
+          className="
+            text-9xl font-semibold
+            bg-contain bg-[url('/icons/modal/levelup.svg')] bg-no-repeat bg-center
+            text-blue-normal
+          "
+        >
+          {level}
+        </header>
 
-        <strong>Parabéns</strong>
-        <p>Você alcançou um novo level.</p>
+        <strong
+          className="
+            text-4xl
+            text-blue-dark
+          "
+        >
+          Parabéns
+        </strong>
+        <p
+          className="
+            text-xl
+            mt-1
+          "
+        >
+          Você alcançou um novo level.
+        </p>
 
         <button 
+          className="
+            top-2 right-2
+            bg-transparent
+            rounded
+            absolute
+
+            hover:bg-black-bg
+          "
           type="button"
           onClick={closeLevelUpModal}
         > 

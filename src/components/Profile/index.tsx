@@ -5,8 +5,6 @@ import { useContext } from 'react';
 
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 
-import Styles from '../../styles/components/Profile.module.css';
-
 export function Profile() {
   const { data: session } = useSession()
 
@@ -14,9 +12,16 @@ export function Profile() {
 
   return (
     <div 
-      className={Styles.profileContainer}
+      className="
+        flex items-center
+      "
     >
-    <div>
+    <div
+      className="
+        ml-6
+        rounded-[50%]
+      "
+    >
       <Image 
         src={ session ? `${session.user?.image}` : `${userImage}` }
         width={80}
@@ -24,9 +29,24 @@ export function Profile() {
         alt="profile" 
       />
     </div>
-      <div>
-        <strong>{ session ? session.user?.name : userName }</strong>
-        <p>
+      <div
+        className="
+          ml-6
+        "
+      >
+        <strong
+          className="
+            text-2xl font-semibold
+          "
+        >
+          { session ? session.user?.name : userName }
+        </strong>
+        <p
+          className="
+            text-base
+            mt-2
+          "
+        >
           <Image 
             src="/icons/profile/level.svg"
             width={14}
