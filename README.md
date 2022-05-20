@@ -1,13 +1,11 @@
 # moveit-pomodoro-app
 
 ## Tecnologias
-<div style="display: flex">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="120" alt="react" />
-  
-  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" width="137" alt="nextjs" />
-
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" width="175" alt="ts" />
-  
+<div>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="140" height="40" alt="react" />
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" width="140" height="40" alt="nextjs" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" width="140" height="40" alt="ts" />
+  <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" width="140" height="40" alt="talwindcss" />
 </div>
 
 <!--
@@ -19,7 +17,7 @@
 ## Cloud
 
 <a href="https://vercel.com/dashboard" target="_blank">
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" width="120" alt="vecel" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" width="140" height="40" alt="vecel" />
 </a>
 
 ## Getting Started
