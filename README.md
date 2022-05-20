@@ -118,19 +118,24 @@ A maioria das cores usadas são da plataforma da [@Rocketseat](https://github.co
 
 **Variáveis**
 
-```css
-:root {
-  --white: #fff;
-  --background: #121214;
-  --navbar: #202024;
-  --text: #e6e6e6;
-  --countdown: #52525c;
-  --text-highlight: #b3b9ff;
-  --title: #fff;
-  --red: #e83f5b;
-  --green: #4cd62b;
-  --blue: #225aa3;
-  --blue-dark: #1b4172;
+```js
+colors: {
+  text: {
+    normal: "#e6e6e6"
+  },
+  black: {
+    bg : "#121214",
+    nav: "#202024",
+    countdown: "#52525c"
+  },
+  button: {
+    succeeded: "#4cd62b",
+    failed: "#e83f5b"
+  },
+  blue: {
+    normal: "#225aa3",
+    dark: "#1b4172"
+  }
 }
 ```
 
