@@ -9,51 +9,29 @@ export function ExperienceBar() {
 
   return (
     <header 
-      className="
-        flex items-center
-
-        lg:mt-20
-      "
+      className="flex items-center lg:mt-20"
     >
       <span
-        className="
-          text-base
-        "
+        className="text-base"
       >
         0 xp
       </span>
       <div
-        className="
-          flex-1
-          h-1 my-0 mx-6 relative
-          rounded
-          bg-black-nav
-        "
+        className=" flex-1 h-1 my-0 mx-6 relative rounded bg-black-nav"
       >
         <div 
-          className="
-            h-1
-            rounded
-            bg-button-succeeded
-          "
+          className="h-1 rounded bg-button-succeeded"
           style={{ width: `${percentToNextLevel}%` }} 
         />
         <span
-          className="
-            text-base
-            absolute
-            top-3
-            translate-x-6
-          "
+          className="text-base absolute top-3 translate-x-5"
           style={{ left: `${percentToNextLevel}%` }}
         >
           {currentExperience} xp 
         </span>
       </div>
       <span
-        className="
-          text-base
-        "
+        className="text-base"
       >
         {experienceToNextLevel} xp
       </span>
