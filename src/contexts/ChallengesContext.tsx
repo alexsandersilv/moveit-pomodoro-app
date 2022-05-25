@@ -7,6 +7,7 @@ import {
 import Cookies from 'js-cookie';
 
 import type { 
+  Challenge,
   ChallengesContextData, 
   ChallengesProviderProps 
 } from '../types/ChallengesTypes';
@@ -51,7 +52,6 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
     const randomChallengesIndex = Math.floor(Math.random() * challenges.length);
     const challenge = challenges[randomChallengesIndex];
 
-    //@ts-ignore
     setActiveChallenge(challenge);
 
     new Audio("/notification.mp3").play();
@@ -102,7 +102,6 @@ export function ChallengesProvider({ children,  ...rest}: ChallengesProviderProp
         level,
         currentExperience,
         challengesCompleted,
-        //@ts-ignore
         activeChallenge: activeChallenge,
         experienceToNextLevel,
         levelUp,

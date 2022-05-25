@@ -1,7 +1,5 @@
-import type { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
-
-import { useSession } from 'next-auth/react';
 
 import type { HomeProps } from '../types/HomeTypes';
 
@@ -14,22 +12,6 @@ import { ChallengeBox } from '../components/ChallengeBox';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { Sidebar } from '../components/Sidebar';
-
-import Styles from '../styles/pages/Home.module.css';
-/*
-export const getServerSideProps: GetServerSideProps = async(ctx: GetServerSidePropsContext) => {
-  
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies
-
-  return {
-      props: {
-          level: Number(level),
-          currentExperience: Number(currentExperience),
-          challengesCompleted: Number(challengesCompleted)
-      }
-  }
-}
-*/
 
 const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperience,challengesCompleted }) => {
 
