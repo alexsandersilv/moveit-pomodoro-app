@@ -15,22 +15,6 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import { Sidebar } from '../components/Sidebar';
 
-import Styles from '../styles/pages/Home.module.css';
-/*
-export const getServerSideProps: GetServerSideProps = async(ctx: GetServerSidePropsContext) => {
-  
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies
-
-  return {
-      props: {
-          level: Number(level),
-          currentExperience: Number(currentExperience),
-          challengesCompleted: Number(challengesCompleted)
-      }
-  }
-}
-*/
-
 const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperience,challengesCompleted }) => {
 
   return (
@@ -41,27 +25,16 @@ const Home: NextPage<HomeProps> = ({ username, userImage, level, currentExperien
       challengesCompleted={challengesCompleted} 
       userImage={userImage} 
     >
-      <div 
-        className="
-          flex  flex-col h-[100vh] max-w-[992px] my-0 mx-auto py-9 px-10
-        "
-      >
+      <div className="flex  flex-col h-[100vh] max-w-[992px] my-0 mx-auto py-9 px-10">
         <Head>
-            <title>Move.It Pomodoro</title>
+          <title>Move.It Pomodoro</title>
         </Head>
 
         <Sidebar />
         <ExperienceBar />
 
         <CountdownProvider>
-          <section
-            className="
-              flex-1 grid grid-cols-2 gap-24 content-center
-
-              lg:mt-12
-              md:gap-8 md:grid-cols-1
-            "
-          >
+          <section className="flex-1 grid grid-cols-2 gap-24 content-center lg:mt-12 md:gap-8 md:grid-cols-1">
               <div>
                   <Profile />
                   <CompletedChallenges />

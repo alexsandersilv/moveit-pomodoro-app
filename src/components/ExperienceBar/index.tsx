@@ -8,17 +8,11 @@ export function ExperienceBar() {
   const percentToNextLevel = Math.round((currentExperience * 100)) / experienceToNextLevel;
 
   return (
-    <header 
-      className="flex items-center lg:mt-20"
-    >
-      <span
-        className="text-base"
-      >
+    <header className="flex items-center lg:mt-20">
+      <span className="text-base">
         0 xp
       </span>
-      <div
-        className=" flex-1 h-1 my-0 mx-6 relative rounded bg-black-nav"
-      >
+      <div className=" flex-1 h-1 my-0 mx-6 relative rounded bg-black-nav">
         <div 
           className="h-1 rounded bg-button-succeeded"
           style={{ width: `${percentToNextLevel}%` }} 
@@ -30,9 +24,7 @@ export function ExperienceBar() {
           {currentExperience} xp 
         </span>
       </div>
-      <span
-        className="text-base"
-      >
+      <span className="text-base">
         {experienceToNextLevel} xp
       </span>
     </header>
