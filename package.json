@@ -11,7 +11,7 @@
   "dependencies": {
     "js-cookie": "^3.0.1",
     "next": "12.1.5",
-    "next-auth": "^4.9.0",
+    "next-auth": "^4.10.3",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
