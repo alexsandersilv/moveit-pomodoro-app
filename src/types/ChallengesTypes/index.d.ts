@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
 interface Challenge {
-  type: "body" | "eye",
+  type: string,
   description: string,
   amount: number
 }
@@ -21,7 +21,7 @@ export interface ChallengesContextData {
   level: number,
   currentExperience: number,
   challengesCompleted: number,
-  activeChallenge: Challenge,
+  activeChallenge: Challenge | null,
   experienceToNextLevel: number,
   levelUp: () => void,
   startNewChallenge: () => void,
