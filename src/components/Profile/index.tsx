@@ -15,7 +15,7 @@ export function Profile() {
   return (
     <div className="flex items-center">
       <div className="ml-6 rounded-[50%]">
-        <Image 
+        <Image className="rounded-full"
           src={ session ? `${session.user?.image}` : `${userImage}` }
           width={80}
           height={80}
