@@ -26,7 +26,7 @@ export function Profile() {
         <strong className="text-2xl font-semibold">
           { session ? session.user?.name : userName }
         </strong>
-        <p className="text-base mt-2">
+        <p className="flex gap-3 text-base mt-2">
           <Image 
             src="/icons/profile/level.svg"
             width={14}
